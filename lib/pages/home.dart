@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:warmuptimer/View/GetData.dart';
-import 'package:warmuptimer/View/testserver.dart';
-import 'package:warmuptimer/constants/global_variable.dart';
-
-import '../Model/Device.dart';
 
 class Home extends StatefulWidget {
   static const  route='/';
@@ -27,7 +23,6 @@ class _HomeState extends State<Home> {
 
     
 GetData data=GetData();
-Testserver server=Testserver();
   @override
   Widget build(BuildContext context) {
 

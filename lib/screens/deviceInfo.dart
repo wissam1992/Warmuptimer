@@ -147,7 +147,7 @@ class _DeviceInfoViewState extends State<DeviceInfoView> {
                 Visibility(
                   visible: isFirstTimerDone,
                   child: TimerBuilder(
-                    duration: Duration(seconds: 18),
+                    duration: Duration(seconds: device.graceperiod),
                     builder: (context, Duration remaining) {
                       return Text(
                         'Timer: ${remaining.inMinutes.toString().padLeft(2, '0')}:${(remaining.inSeconds % 60).toString().padLeft(2, '0')} seconds remaining',
